@@ -25,6 +25,11 @@ public class EmprendimientoController {
     }
     //Tratar de ver como agregar metodo Get para ver todos los emprendimientos.
 
+    @GetMapping
+    public ResponseEntity<?> obtenerTodosEventos(){
+        return new ResponseEntity<>(emprendimientoRepository.findAll(), HttpStatus.OK);
+    }
+
 
     @PostMapping
     public ResponseEntity<?> crearEmprendimiento(@Valid @RequestBody OperacionEmprendimiento operacionEmprendimiento){

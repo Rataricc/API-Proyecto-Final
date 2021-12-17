@@ -13,7 +13,6 @@ import javax.validation.Valid;
 import java.time.LocalDate;
 import java.util.List;
 
-
 @RestController
 @RequestMapping(value = "/usuario")
 public class UsuarioController {

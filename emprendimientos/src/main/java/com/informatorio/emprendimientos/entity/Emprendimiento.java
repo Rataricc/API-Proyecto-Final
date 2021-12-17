@@ -1,6 +1,7 @@
 package com.informatorio.emprendimientos.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
@@ -28,6 +29,7 @@ public class Emprendimiento {
     private boolean publicado;
 
     //Agregue la conexion entre las tablas
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)
     private Usuario owner;
 
