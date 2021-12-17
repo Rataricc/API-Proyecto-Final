@@ -25,6 +25,7 @@ public class EmprendimientoController {
     }
     //Tratar de ver como agregar metodo Get para ver todos los emprendimientos.
 
+
     @PostMapping
     public ResponseEntity<?> crearEmprendimiento(@Valid @RequestBody OperacionEmprendimiento operacionEmprendimiento){
         return new ResponseEntity<>(emprendimientoService.crearEmprendimiento(operacionEmprendimiento),

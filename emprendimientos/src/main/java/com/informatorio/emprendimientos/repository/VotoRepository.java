@@ -1,9 +1,9 @@
 package com.informatorio.emprendimientos.repository;
 
-import com.informatorio.emprendimientos.entity.Emprendimiento;
+import com.informatorio.emprendimientos.entity.Voto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface EmprendimientoRepository extends JpaRepository<Emprendimiento, Long> {
+public interface VotoRepository extends JpaRepository<Voto, Long> {
 }
